@@ -1,3 +1,0 @@
-development:
-  driver: mysql
-  open: user=root dbname=local
