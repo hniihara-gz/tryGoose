@@ -7,4 +7,4 @@ RUN go get -u github.com/pressly/goose/cmd/goose
 FROM alpine
 WORKDIR /app
 COPY --from=builder /go/bin/goose /usr/bin/goose
-ENTRYPOINT goose
+ENTRYPOINT ["/usr/bin/goose"]

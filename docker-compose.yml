@@ -10,10 +10,7 @@ services:
   goose:
     build: .
     container_name: goose
-    command: ""
     volumes:
       - .:/app
-    links:
-      - db
     depends_on:
       - db
