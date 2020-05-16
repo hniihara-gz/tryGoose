@@ -14,3 +14,7 @@ services:
       - .:/app
     depends_on:
       - db
+    environment:
+      - DB_USR=root
+      - DB_PW=password
+      - DB_NM=local
