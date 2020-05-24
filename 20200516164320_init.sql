@@ -5,7 +5,6 @@ create table IF NOT EXISTS  users (
     name varchar(255) NOT NULL,
     email varchar(255) UNIQUE NOT NULL,
     password varchar(255) NOT NULL,
-    INDEX(email)
     );
 -- +goose StatementEnd
 

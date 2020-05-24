@@ -5,6 +5,10 @@ services:
     environment:
       MYSQL_ROOT_PASSWORD: password
       MYSQL_DATABASE: local
+    volumes:
+      - db/my.cnf:/etc/mysql/my.cnf
+
+
     ports:
       - "3306:3306"
   goose:
